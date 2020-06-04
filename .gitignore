@@ -20,7 +20,6 @@ coverage/
 *.swo
 *.pyc
 *.pyo
-package-lock.json
 .build
 node_modules
 .cache
