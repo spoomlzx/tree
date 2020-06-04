@@ -76,7 +76,7 @@ class InternalTreeNode extends React.Component<InternalTreeNodeProps, TreeNodeSt
   onSelectorClick = e => {
     // Click trigger before select/check operation
     const {
-      context: { onNodeClick },
+      context: { onNodeClick, onNodeExpand, clickTitleToExpand },
     } = this.props;
     onNodeClick(e, convertNodePropsToEventData(this.props));
 
@@ -84,6 +84,9 @@ class InternalTreeNode extends React.Component<InternalTreeNodeProps, TreeNodeSt
       this.onSelect(e);
     } else {
       this.onCheck(e);
+    }
+    if (clickTitleToExpand) {
+      onNodeExpand(e, convertNodePropsToEventData(this.props));
     }
   };
 

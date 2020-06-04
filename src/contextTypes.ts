@@ -13,6 +13,7 @@ export interface TreeContextProps {
   selectable: boolean;
   showIcon: boolean;
   icon: IconType;
+  clickTitleToExpand: boolean;
   switcherIcon: IconType;
   draggable: boolean;
   checkable: boolean | React.ReactNode;

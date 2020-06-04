@@ -61,6 +61,7 @@ export interface TreeProps {
   showLine?: boolean;
   showIcon?: boolean;
   icon?: IconType;
+  clickTitleToExpand?: boolean;
   selectable?: boolean;
   disabled?: boolean;
   multiple?: boolean;
@@ -176,6 +177,7 @@ class Tree extends React.Component<TreeProps, TreeState> {
     prefixCls: 'rc-tree',
     showLine: false,
     showIcon: true,
+    clickTitleToExpand: true,
     selectable: true,
     multiple: false,
     checkable: false,
@@ -1032,6 +1034,7 @@ class Tree extends React.Component<TreeProps, TreeState> {
       selectable,
       showIcon,
       icon,
+      clickTitleToExpand,
       switcherIcon,
       draggable,
       checkable,
@@ -1053,6 +1056,7 @@ class Tree extends React.Component<TreeProps, TreeState> {
           selectable,
           showIcon,
           icon,
+          clickTitleToExpand,
           switcherIcon,
           draggable,
           checkable,
