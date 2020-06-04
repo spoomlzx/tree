@@ -27,5 +27,3 @@ dist
 build
 /coverage
 yarn.lock
-es
-lib
